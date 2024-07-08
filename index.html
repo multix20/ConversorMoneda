@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Monedas</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Monedas</h1>
+    <div class="input-container">
+      <input type="number" id="cantidad" placeholder="Cantidad en CLP" min="1">
+      <select id="moneda"></select>
+      <button onclick="convertirMoneda()" class="btn-convertir">Convertir</button>
+    </div>
+    <div id="resultado"></div>
+    <canvas id="historialChart"></canvas>
+  </div>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
